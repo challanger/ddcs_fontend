@@ -1,0 +1,106 @@
+$headerBackgroundColour: rgba(0,0,0,0.65); 
+header {
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    z-index: 100; 
+    .container {
+         background-color: $headerBackgroundColour; 
+         padding: 10px 0px;
+         .logo {
+             img {
+                 max-width: 150px; 
+             }
+         }
+         ul.mainmenu, ul.submenu {
+            padding: 0px; 
+            margin: 0px; 
+            list-style: none; 
+            text-align: right; 
+            li {
+                display: inline-block; 
+                a {
+                    display: block; 
+                    color: #fff; 
+                    padding: 15px 15px; 
+                    text-transform: uppercase; 
+                    font-weight: 600; 
+                    font-size: 15px; 
+                    &:hover {
+                        color: #888; 
+                    }
+                }
+            }
+        }
+
+        ul.mainmenu {
+            padding-top: 17px; 
+            li {
+                position: relative; 
+                a{
+                    padding: 15px 15px; 
+                }
+                ul.submenu {
+                    background-color: $headerBackgroundColour; 
+                    text-align: center; 
+                    position: absolute; 
+                    opacity: 0; 
+                    transition: all 0.4s ease-out; 
+                    transform: scaleY(0);
+                    transform-origin: top; 
+                    li {
+                        display: block;
+                        a {
+                            padding: 5px 15px; 
+                            line-height: 1.2em; 
+                        } 
+                    }
+                }
+                &:hover {
+                    ul.submenu {
+                        transform: scaleY(1);
+                        opacity: 1;  
+                    }
+                }
+            }
+        }
+
+        .mobile-menu-toogle {
+            position: absolute; 
+            left: 15px; 
+            top: 25px; 
+            font-size: 20px; 
+            color: #fff; 
+            cursor:pointer; 
+            &:hover {
+                color: #888; 
+            }
+        }
+    }
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    header {
+        .container {
+            .logo {
+                text-align: center; 
+                img {
+                    width: 100px; 
+                }
+            }
+        }
+    }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+    header {
+        .container {
+            .mobile-menu-toogle {
+                display: none; 
+            }
+        }
+    }
+}

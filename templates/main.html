@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+        <title>Home | Durham Divers Scuba Club</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+
+        <link href='//fonts.googleapis.com/css?family=Roboto:100,300,400,700|Titillium+Web:400,600' rel='stylesheet' type='text/css'>
+        <link href="{{ROOT_PATH}}vendor/foundation/css/foundation.min.css" rel="stylesheet">
+
+        <!--<link href="css/isotope.css" rel="stylesheet">-->
+        <!--<link href="css/jquery.fancybox-1.3.4.css" rel="stylesheet">-->
+        <link href="{{ROOT_PATH}}css/style.css" rel="stylesheet">
+
+        <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+        <!--<link rel="shortcut icon" href="images/favicon.png" />-->
+        <!--<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />-->
+    </head>
+    <body>
+        <div class="mobile-menu">
+            <ul class="mainmenu">
+                <li>
+                    <a href="{{ROOT_PATH}}charters/">Charters</a>
+                </li>
+                <li>
+                    <a href="{{ROOT_PATH}}gallery/">Gallery</a>
+                </li>
+                <li>
+                    <a href="{{ROOT_PATH}}calendar/">Calendar</a>
+                </li>
+                <li>
+                    <a href="#about-us">About Us</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="{{ROOT_PATH}}/membership/">Membership</a>
+                        </li>
+                        <li>
+                            <a href="{{ROOT_PATH}}executive-team/">Executive Team</a>
+                        </li>
+                        <li>
+                            <a href="{{ROOT_PATH}}payment-options/">Payment Options</a> 
+                        </li> 
+                        <li>
+                            <a href="{{ROOT_PATH}}charter-cancellation-policy/">Cancellation Policy</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="{{ROOT_PATH}}contact-us/">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main-content">
+            <header id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="logo medium-3 columns">
+                            <div class="mobile-menu-toogle">
+                                <i class="fa fa-bars"></i>
+                            </div>
+                            <a href="{{ROOT_PATH}}">
+                                <img src="{{ROOT_PATH}}images/logo-white.png" alt="Durham Divers Scuba Club Logo">
+                            </a>
+                        </div>
+                        
+                        <div class="menu small-hidden medium-9 columns">
+                            <ul class="mainmenu">
+                                <li>
+                                    <a href="{{ROOT_PATH}}charters/">Charters</a>
+                                </li>
+                                <li>
+                                    <a href="{{ROOT_PATH}}gallery/">Gallery</a>
+                                </li>
+                                <li>
+                                    <a href="{{ROOT_PATH}}calendar/">Calendar</a>
+                                </li>
+                                <li>
+                                    <a href="{{ROOT_PATH}}about-us/">About Us</a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="{{ROOT_PATH}}membership/">Membership</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ROOT_PATH}}executive-team/">Executive Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ROOT_PATH}}payment-options/">Payment Options</a> 
+                                        </li> 
+                                        <li>
+                                            <a href="{{ROOT_PATH}}charter-cancellation-policy/">Cancellation Policy</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="{{ROOT_PATH}}contact-us/">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="main">
+                {{CONTENT}}
+            </div>
+        
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="medium-8 columns"><p>&copy; 2017 Durham Divers Scuba Club</p></div>
+                        <div class="medium-4 columns">
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="{{ROOT_PATH}}contact/">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="{{ROOT_PATH}}about-us/">About Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="{{ROOT_PATH}}vendor/jquery.min.js"></script>
+        <script src="{{ROOT_PATH}}vendor/foundation/js/vendor/foundation.min.js"></script>
+        <script src="{{ROOT_PATH}}js/system.js"></script>
+    </body>
+</html>

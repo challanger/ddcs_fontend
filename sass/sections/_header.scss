@@ -1,0 +1,12 @@
+section.section-header{
+    background-color: #333; 
+    background-image: url('../images/header.jpg');
+    background-position: center center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    &::before{
+        content: '';
+        display: block; 
+        height: 200px; 
+    }
+}

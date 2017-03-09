@@ -1,0 +1,7 @@
+@mixin sectionBackground(){
+    .container{ 
+        background-color: #fff; 
+        border: 1px solid rgba(200,200,200,0.5); 
+        padding: 20px; 
+    }
+}

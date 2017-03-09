@@ -1,0 +1,42 @@
+footer {
+    background-color: #383838; 
+    padding: 15px 0px; 
+    color: #aaa; 
+    font-size: 12px; 
+    p {
+        margin-bottom: 0px; 
+    }
+    ul.footer-menu {
+        list-style: none; 
+        margin: 0px; 
+        padding: 0px; 
+        text-align: right; 
+        li {
+            display: inline-block;
+            a {
+                padding: 0px 15px; 
+                color: #aaa; 
+            }
+            &:hover {
+                a { color: #fff; }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    footer {
+        text-align: center; 
+        ul.footer-menu {
+            text-align: center; 
+        }
+    }
+}
+
+@media screen and (min-width: 40em) {
+    footer {
+        position: absolute; 
+        bottom: 0px; 
+        width: 100%;
+    } 
+}
