@@ -1,6 +1,6 @@
 RewriteEngine On
 
-RewriteRule ^(css|js|images|vendor|galleries|process|test.php)($|/) - [L]
+RewriteRule ^(css|js|images|vendor|galleries|files|process|test.php)($|/) - [L]
 
 RewriteCond %{QUERY_STRING} !path=
 RewriteRule ^(.*)$ ?path=$1 [QSA,L]
