@@ -2,6 +2,9 @@ $fa-font-path: "../vendor/font-awesome-4.7.0/fonts";
 
 @import '../vendor/font-awesome-4.7.0/scss/font-awesome';
 @import 'mixins';
+@import 'buttons';
+@import 'forms'; 
+@import 'modal';
 @import 'mobile-menu';
 @import 'header';
 @import 'sections/body';
@@ -11,4 +14,5 @@ $fa-font-path: "../vendor/font-awesome-4.7.0/fonts";
 @import 'sections/home-latest';
 @import 'sections/top';
 @import 'sections/404';
+@import 'pages/contact-us';
 @import 'footer';

@@ -1,0 +1,14 @@
+button, .button, input[type="submit"] {
+    padding: 10px 15px; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    background-color: #14679e; 
+    color: #fff; 
+    border: 1px solid #14679e; 
+    //border-radius: 3px; 
+    cursor: pointer; 
+    &:hover {
+        color: #14679e; 
+        background-color: #fff; 
+    }
+}

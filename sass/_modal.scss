@@ -1,0 +1,14 @@
+.reveal {
+    .content {
+        //padding-top: 20px; 
+    }
+    .close-button {
+        background-color: transparent; 
+        border: 0px; 
+        padding: 0px; 
+        &:hover {
+            background-color: transparent; 
+            border: 0px; 
+        }
+    }
+}

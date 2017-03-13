@@ -18,7 +18,10 @@ body{
     section {
         margin-bottom: 30px; 
         .container {
-            
+            & > .row {
+                margin-left: -0.9375rem; 
+                margin-right: -0.9375rem; 
+            }
         }
     }
 }

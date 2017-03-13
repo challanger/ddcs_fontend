@@ -17,6 +17,10 @@
         <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
         <!--<link rel="shortcut icon" href="images/favicon.png" />-->
         <!--<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />-->
+
+        <script type="text/javascript">
+            window.rootPath = "{{ROOT_PATH}}";
+        </script>
     </head>
     <body>
         <div class="mobile-menu">
@@ -112,6 +116,9 @@
                         <div class="medium-4 columns">
                             <ul class="footer-menu">
                                 <li>
+                                    <a target="_blank" href="https://www.facebook.com/DurhamDivers/"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
                                     <a href="{{ROOT_PATH}}contact/">Contact Us</a>
                                 </li>
                                 <li>
@@ -126,5 +133,7 @@
         <script src="{{ROOT_PATH}}vendor/jquery.min.js"></script>
         <script src="{{ROOT_PATH}}vendor/foundation/js/vendor/foundation.min.js"></script>
         <script src="{{ROOT_PATH}}js/system.js"></script>
+        <script src="{{ROOT_PATH}}js/modal.js"></script>
+        <script src="{{ROOT_PATH}}js/forms.js"></script>
     </body>
 </html>
