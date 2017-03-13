@@ -2330,6 +2330,7 @@ button, .button, input[type="submit"] {
   background-color: #14679e;
   color: #fff;
   border: 1px solid #14679e;
+  line-height: 1em;
   cursor: pointer; }
   button:hover, .button:hover, input[type="submit"]:hover {
     color: #14679e;
@@ -2472,6 +2473,36 @@ section.seciton-body .container {
 
 section.section-calendar .calendar-outer {
   overflow-y: auto; }
+
+body section.section-executive .container > .row.executive-list {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.section-executive .executive-list .item {
+  padding: 0px 1px; }
+  .section-executive .executive-list .item .image {
+    background-image: url("../images/exec-temp.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .section-executive .executive-list .item .image::before {
+      content: "";
+      display: block;
+      padding-top: 120%; }
+  .section-executive .executive-list .item .info {
+    padding: 15px 0px;
+    line-height: 1em; }
+    .section-executive .executive-list .item .info .name {
+      font-weight: bold;
+      font-size: 1.2em; }
+    .section-executive .executive-list .item .info .position {
+      font-size: 0.9em;
+      color: #555; }
+    .section-executive .executive-list .item .info .contact {
+      margin-top: 8px; }
+      .section-executive .executive-list .item .info .contact button {
+        padding: 6px 10px;
+        font-size: 0.8em; }
 
 section.section-header {
   background-color: #333;

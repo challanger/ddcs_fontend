@@ -17,5 +17,14 @@
                 _Form.Submit(); 
             });
         });
+
+        jQuery(".executive-list .item").each(function(){
+            var execID = jQuery(this).data("execId");
+            var EXEC = new Executive(execID);
+            jQuery(this).on("click",".contact button",function(event){
+                event.preventDefault(); 
+                EXEC.Contact(); 
+            });
+        });
     }); 
 })(); 

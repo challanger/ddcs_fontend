@@ -1,0 +1,47 @@
+body section.section-executive {
+    .container{
+        & > .row.executive-list {
+            margin-left: 0px; 
+        margin-right: 0px; 
+        }
+    }
+}
+
+.section-executive {
+    .executive-list {
+        .item {
+            padding: 0px 1px; 
+            .image {
+                background-image: url("../images/exec-temp.png");
+                background-position: center center; 
+                background-size: cover; 
+                background-repeat: no-repeat; 
+                &::before{
+                    content: ""; 
+                    display: block; 
+                    padding-top: 120%; 
+                }
+            }
+            .info {
+                padding: 15px 0px; 
+                line-height: 1em; 
+                .name {
+                    font-weight: bold; 
+                    font-size: 1.2em; 
+                }
+                .position {
+                    font-size: 0.9em; 
+                    color: #555; 
+                }
+                .contact {
+                    margin-top: 8px; 
+                    button {
+                        padding: 6px 10px; 
+                        font-size: 0.8em; 
+                    }
+                }
+
+            }
+        }
+    }
+}
