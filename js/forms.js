@@ -1,8 +1,13 @@
 (function(){
     "use strict"
 
-    function Form(_formID){
+    function Form(_formID,_action){
         this.formID = _formID;
+        if(typeof(_action) === "undefined")
+            this.action = "submit";
+        else 
+            this.action = _action;
+
         this.form = jQuery("#" + this.formID); 
     };
 
@@ -65,7 +70,7 @@
     Form.prototype.Send = function(_values){
         this.SetSubmitText("Submittings...");
         var FormThis = this; 
-        jQuery.post(window.rootPath+'process/form?action=submit&form=' + this.formID,_values)
+        jQuery.post(window.rootPath+'process/form?action=' + this.action + '&form=' + this.formID,_values)
             .done(function(response){
                 try {
                     var json = JSON.parse(response); 

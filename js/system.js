@@ -20,7 +20,8 @@
 
         jQuery(".executive-list .item").each(function(){
             var execID = jQuery(this).data("execId");
-            var EXEC = new Executive(execID);
+            var execName = jQuery(this).find(".info .name").html(); 
+            var EXEC = new Executive(execID,execName);
             jQuery(this).on("click",".contact button",function(event){
                 event.preventDefault(); 
                 EXEC.Contact(); 
