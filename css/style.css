@@ -2504,6 +2504,65 @@ body section.section-executive .container > .row.executive-list {
         padding: 6px 10px;
         font-size: 0.8em; }
 
+section.seciton-gallery .container {
+  padding: 20px; }
+section.seciton-gallery .gallery .item {
+  padding: 5px; }
+  section.seciton-gallery .gallery .item .inner {
+    background-color: #fff;
+    padding: 7px;
+    border: 1px solid #ddd;
+    cursor: pointer; }
+    section.seciton-gallery .gallery .item .inner .image {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      section.seciton-gallery .gallery .item .inner .image::before {
+        content: '';
+        display: block;
+        padding-top: 100%; }
+  section.seciton-gallery .gallery .item:last-child {
+    float: left; }
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  section.seciton-gallery .gallery {
+    margin: 0px -5px !important; } }
+section.seciton-galleries .container {
+  padding: 20px; }
+section.seciton-galleries .galleries .item {
+  padding: 5px; }
+  section.seciton-galleries .galleries .item .inner {
+    background-color: #fff;
+    padding: 7px;
+    border: 1px solid #ddd;
+    cursor: pointer; }
+    section.seciton-galleries .galleries .item .inner .image {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative; }
+      section.seciton-galleries .galleries .item .inner .image::before {
+        content: '';
+        display: block;
+        padding-top: 100%; }
+      section.seciton-galleries .galleries .item .inner .image .title {
+        text-align: center;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        font-weight: 600; }
+  section.seciton-galleries .galleries .item:last-child {
+    float: left; }
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  section.seciton-gallery .gallery {
+    margin: 0px -5px !important; } }
 section.section-header {
   background-color: #333;
   background-image: url("../images/header.jpg");
@@ -2590,7 +2649,9 @@ body {
   body .container {
     width: 100%; }
   body .small-hidden {
-    display: none; } }
+    display: none; }
+  body .row {
+    max-width: 100%; } }
 /* Medium and up */
 @media screen and (min-width: 40em) {
   body #main-content {

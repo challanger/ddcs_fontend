@@ -26,5 +26,16 @@
                 EXEC.Contact(); 
             });
         });
+
+        jQuery(".gallery").each(function(){
+            var folder = jQuery(this).data("folder");
+            var GALLERY = new Gallery(folder);
+            GALLERY.AddOn(this); 
+        });
+
+        jQuery(".galleries").on("click",".item",function(){
+            var gallery = jQuery(this).data("gallery");
+            window.location = window.rootPath + "gallery-" + gallery + "/";
+        });
     }); 
 })(); 

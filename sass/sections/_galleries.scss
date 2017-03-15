@@ -1,0 +1,50 @@
+section.seciton-galleries {
+    .container {
+        padding: 20px; 
+    }
+    .galleries { 
+        .item {
+            padding: 5px; 
+            .inner {
+                background-color: #fff; 
+                padding: 7px; 
+                border: 1px solid #ddd; 
+                cursor: pointer; 
+                .image {
+                    background-position: center center; 
+                    background-repeat: no-repeat; 
+                    background-size: cover; 
+                    position: relative; 
+                    &::before {
+                        content: '';
+                        display: block; 
+                        padding-top: 100%; 
+                    }
+                    .title {
+                        text-align: center; 
+                        position: absolute; 
+                        bottom: 0px; 
+                        left: 0px; 
+                        right: 0px; 
+                        padding: 5px; 
+                        background-color: rgba(0,0,0,0.6);
+                        color: #fff; 
+                        font-weight: 600; 
+                    }
+                }
+            }
+            &:last-child {
+                float: left; 
+            }
+        }
+    }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+    section.seciton-gallery {
+        .gallery {
+            margin: 0px -5px !important; 
+        }
+    }
+}

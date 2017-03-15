@@ -1,0 +1,38 @@
+section.seciton-gallery {
+    .container {
+        padding: 20px; 
+    }
+    .gallery { 
+        .item {
+            padding: 5px; 
+            .inner {
+                background-color: #fff; 
+                padding: 7px; 
+                border: 1px solid #ddd; 
+                cursor: pointer; 
+                .image {
+                    background-position: center center; 
+                    background-repeat: no-repeat; 
+                    background-size: cover; 
+                    &::before {
+                        content: '';
+                        display: block; 
+                        padding-top: 100%; 
+                    }
+                }
+            }
+            &:last-child {
+                float: left; 
+            }
+        }
+    }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+    section.seciton-gallery {
+        .gallery {
+            margin: 0px -5px !important; 
+        }
+    }
+}
