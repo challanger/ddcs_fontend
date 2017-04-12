@@ -2565,8 +2565,8 @@ section.seciton-galleries .galleries .item {
     margin: 0px -5px !important; } }
 section.section-header {
   background-color: #333;
-  background-image: url("../images/header.jpg");
-  background-position: center center;
+  background-image: url("../images/header2.jpg");
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat; }
   section.section-header::before {
