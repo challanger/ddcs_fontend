@@ -52,8 +52,20 @@ class FormController extends BasicController{
       $messageExtra = "<p>This message was intended for exec user id: " + $_POST["team-member"] + "</p>";
       switch((int)$_POST["team-member"])
       {
-        case 1:
-          $sendTo = "aaron@challengernet.com";
+        case 1:   //Frank Smaglinskie 
+          $sendTo = "frank@durhamdivers.com";
+          $messageExtra = "";
+          break; 
+        case 2:   //Greg Wright
+          $sendTo = "gwright@durhamdivers.com";
+          $messageExtra = "";
+          break; 
+        case 3:   //Brian Pallock
+          $sendTo = "scuba@divesource.com";
+          $messageExtra = "";
+          break; 
+        case 4:   //Greg Johnson 
+          $sendTo = "gjohnson@durhamdivers.com";
           $messageExtra = "";
           break; 
       }
