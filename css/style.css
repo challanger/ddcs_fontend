@@ -2474,6 +2474,44 @@ section.seciton-body .container {
 section.section-calendar .calendar-outer {
   overflow-y: auto; }
 
+section.seciton-charter {
+  margin-bottom: 0px; }
+  section.seciton-charter .container {
+    background-color: #fff;
+    border: 1px solid rgba(200, 200, 200, 0.5);
+    padding: 20px; }
+  section.seciton-charter .dives .dive {
+    float: left; }
+    section.seciton-charter .dives .dive .inner {
+      background-color: #f8f5f5;
+      padding: 15px;
+      position: relative; }
+      section.seciton-charter .dives .dive .inner .date {
+        font-weight: bold;
+        font-size: 1.2em;
+        padding-bottom: 2px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        margin-bottom: 7px;
+        text-align: center; }
+      section.seciton-charter .dives .dive .inner .cost {
+        text-align: right; }
+      section.seciton-charter .dives .dive .inner .extra {
+        font-size: 0.9em; }
+      section.seciton-charter .dives .dive .inner .divers {
+        margin-top: 15px; }
+        section.seciton-charter .dives .dive .inner .divers ul {
+          list-style: none;
+          margin-left: 0px;
+          margin-bottom: 0px; }
+        section.seciton-charter .dives .dive .inner .divers .position {
+          font-size: 0.8em;
+          font-style: italic; }
+
+section.seciton-charter-extra .container {
+  background-color: #fff;
+  border: 1px solid rgba(200, 200, 200, 0.5);
+  padding: 20px; }
+
 body section.section-executive .container > .row.executive-list {
   margin-left: 0px;
   margin-right: 0px; }
@@ -2583,6 +2621,13 @@ section.section-home-latest .container {
   border: 1px solid rgba(200, 200, 200, 0.5);
   padding: 20px; }
 
+section.section-map {
+  margin-bottom: 0px; }
+  section.section-map .container #map::before {
+    content: "";
+    display: block;
+    padding-top: 40%; }
+
 section.section-top {
   margin-top: 30px; }
 
@@ -2627,7 +2672,7 @@ footer {
     bottom: 0px;
     width: 100%; } }
 html {
-  height: 100%; }
+  position: relative; }
 
 body {
   height: 100%;
@@ -2643,6 +2688,12 @@ body {
     body section .container > .row {
       margin-left: -0.9375rem;
       margin-right: -0.9375rem; }
+  body .label {
+    font-weight: 800;
+    font-size: 1em;
+    padding: 0px;
+    color: #0a0a0a;
+    background: transparent; }
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {

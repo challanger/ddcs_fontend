@@ -1,0 +1,12 @@
+section.section-map {
+    margin-bottom: 0px; 
+    .container {
+        #map {
+            &::before {
+                content: "";
+                display: block; 
+                padding-top: 40%; 
+            }
+        }
+    }
+}

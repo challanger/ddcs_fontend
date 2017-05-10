@@ -1,0 +1,45 @@
+section.seciton-charter {
+    @include sectionBackground(); 
+    margin-bottom: 0px; 
+    .dives {
+        .dive {
+            float: left; 
+            .inner {
+                background-color: #f8f5f5;
+                padding: 15px;
+                position: relative;
+                .date {
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    padding-bottom: 2px;
+                    border-bottom: 1px solid rgba(0,0,0,0.2);
+                    margin-bottom: 7px;
+                    text-align: center; 
+                }
+                .cost {
+                    text-align: right; 
+                }
+                .extra {
+                    font-size: 0.9em; 
+                }
+                .divers {
+                    margin-top: 15px; 
+                    ul {
+                        list-style: none;
+                        margin-left: 0px;
+                        margin-bottom: 0px;
+                    }
+                    .position {
+                        font-size: 0.8em; 
+                        font-style: italic; 
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+section.seciton-charter-extra {
+    @include sectionBackground();  
+}
